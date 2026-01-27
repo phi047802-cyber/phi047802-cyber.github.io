@@ -1,15 +1,21 @@
 /* 1. Thiết lập chung để xóa khoảng cách thừa của trình duyệt */
-* {
-    margin: 0; /* Xóa bỏ khoảng cách mặc định */
-    padding: 0; /* Xóa bỏ khoảng cách mặc định */
+*{
+    margin: 0; /* Xóa bỏ khoảng cách ngoài mặc định */
+    padding: 0; /* Xóa bỏ khoảng cách trong mặc định */
     box-sizing: border-box; /* Giúp tính toán kích thước phần tử dễ dàng hơn */
+}
+
+.navbar {
+    position: sticky; /* Giúp menu luôn hiển thị khi cuộn trang */
+    top: 0; /* Đặt menu ở vị trí trên cùng */
+    z-index: 1000; /* Đảm bảo menu luôn nằm trên các phần tử khác */
 }
 
 /* 2. Trang trí khung chứa Menu (thẻ ul) */
 .navbar ul {
     list-style-type: none; /* Xóa bỏ hoàn toàn dấu chấm tròn */
     background-color: #1e3a8a; /* Màu nền xanh nhạt cho thanh menu */
-    display: flex;         /* Sử dụng flexbox để sắp xếp các mục menu */
+    display: flex;         /* Sử dụng flexbox để sắp xếp các mục menu theo chiều ngang */
     flex-wrap: wrap;       /* Tự động xuống dòng nếu màn hình quá hẹp */
     justify-content: center; /* Căn giữa toàn bộ menu */
     padding: 10px 0; /* Khoảng cách trên dưới của menu */
@@ -17,7 +23,7 @@
 
 /* 3. Khoảng cách giữa các mục menu */
 .navbar li {
-    margin: 5px 15px;
+    margin: 5px 10px;/*Khoảng cách trên dưới giữa các mục trong menu */
 }
 
 /* 4. Trang trí các liên kết (thẻ a) */
@@ -34,13 +40,6 @@
     text-decoration: underline;/* Gạch chân khi rê chuột vào */
 }
 
-/* 6. Đảm bảo phần nội dung bên dưới không bị dính vào menu */
-section {
-    margin-top: 30px;/* Khoảng cách trên của phần nội dung */
-    text-align: center;/* Căn giữa nội dung */
-    margin-bottom: 50px;
-}
-
 /* 7. Trang trí phần header */
 .header {
     background-image: url('/ImagesofWeb/NCPheader.png'); /* Hình nền cho header */
@@ -50,15 +49,16 @@ section {
 }
 
 .section {
-    text-align: center; /* Căn giữa nội dung */
-    margin: 20px; /* Khoảng cách xung quanh phần nội dung */
+    margin-top: 30px;/* Khoảng cách trên của phần nội dung */
+    text-align: center;/* Căn giữa nội dung */
+    padding: 30px; /* Khoảng cách xung quanh phần nội dung */
     font-size: 18px;
 }
 
 .footer {
     background-color:#1e3a8a; /* Màu nền xanh nhạt cho footer */
     padding: 10px; /* Khoảng cách bên trong footer */
-    margin-top: 40px 0; /* Khoảng cách trên của footer */
+    margin-top: 40px; /* Khoảng cách trên của footer */
     text-align: center; /* Căn giữa nội dung footer */
     width: 100%;
     color: white;
@@ -76,7 +76,20 @@ section {
 
 .BookImagesAndText {
     display: flex;/* Sử dụng flexbox */
-    flex-direction: column;/* Sắp xếp theo cột dọc */
+    flex-direction: column;/* Đổi trục chính sang ngang để Sắp xếp bố cục bên trong theo chiều dọc */
     align-items: center;/* Căn giữa các mục */
     gap: 30px; /* Khoảng cách giữa các mục */
 }
+
+.certificate-description {
+    width: 400px;
+    text-align: left;
+    padding-left: 20px;
+}
+.CertificateandText {
+    display: flex;/* Sử dụng flexbox */
+    flex-direction: column;/* Đổi trục chính sang ngang để Sắp xếp bố cục bên trong theo chiều dọc */
+    align-items: center;/* Căn giữa các mục */
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
