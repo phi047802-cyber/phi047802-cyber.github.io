@@ -1,4 +1,4 @@
-/* 1. Thiết lập chung để xóa khoảng cách thừa của trình duyệt */
+
 *{
     margin: 0; /* Xóa bỏ khoảng cách ngoài mặc định */
     padding: 0; /* Xóa bỏ khoảng cách trong mặc định */
@@ -11,7 +11,6 @@
     z-index: 1000; /* Đảm bảo menu luôn nằm trên các phần tử khác */
 }
 
-/* 2. Trang trí khung chứa Menu (thẻ ul) */
 .navbar ul {
     list-style-type: none; /* Xóa bỏ hoàn toàn dấu chấm tròn */
     background-color: #1e3a8a; /* Màu nền xanh nhạt cho thanh menu */
@@ -21,12 +20,10 @@
     padding: 10px 0; /* Khoảng cách trên dưới của menu */
 }
 
-/* 3. Khoảng cách giữa các mục menu */
 .navbar li {
     margin: 5px 10px;/*Khoảng cách trên dưới giữa các mục trong menu */
 }
 
-/* 4. Trang trí các liên kết (thẻ a) */
 .navbar li a {
     text-decoration: none; /* Xóa gạch chân mặc định */
     color: white;        /* Màu trắng cho liên kết */
@@ -34,13 +31,11 @@
     transition: 0.4s;      /* Hiệu ứng đổi màu mượt mà */
 }
 
-/* 5. Hiệu ứng khi di chuột qua */
 .navbar li a:hover {/* Khi rê chuột vào liên kết */
     color: rgb(209, 205, 205);        /* Đổi sang màu trắng khi rê chuột vào */
     text-decoration: underline;/* Gạch chân khi rê chuột vào */
 }
 
-/* 7. Trang trí phần header */
 .header {
     background-image: url('/ImagesofWeb/NCPheader.png'); /* Hình nền cho header */
     background-size: cover; /* Đảm bảo hình nền phủ đầy header */
@@ -93,3 +88,18 @@
     gap: 20px; /* Khoảng cách giữa các mục */
 }
 
+.strength-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;/* Bo tròn các góc */
+    overflow: hidden;/* Đảm bảo phần bên trong không tràn ra ngoài */
+    margin-top: 10px;
+}
+
+.strength-fill {
+    height: 20px;
+    background-color: rgb(9, 9, 177);
+    border-radius: 20px;/* Bo tròn các góc */
+    width: 0; /* Bắt đầu với chiều rộng 0 */
+    transition: width 10s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+}
