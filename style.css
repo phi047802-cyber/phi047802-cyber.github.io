@@ -103,3 +103,26 @@
     width: 0; /* Bắt đầu với chiều rộng 0 */
     transition: width 2s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
 }
+
+.homework table {
+    margin: auto; /* Căn giữa bảng */
+    margin-bottom: 300px; /* Khoảng cách dưới của bảng */
+}
+
+.Tkb {
+    border-collapse:collapse; /* Gộp các đường viền của bảng */
+    margin-top: 200px;
+    padding: 100px; /* Khoảng cách bên trong bảng */
+}
+
+td {
+    text-align: center; /* Căn giữa nội dung trong ô */
+    padding: 10px; /* Khoảng cách bên trong ô */
+    border: 2px solid black; /* Đường viền cho ô */
+}
+
+th {
+    text-align: center; /* Căn giữa nội dung trong ô tiêu đề */
+    padding: 10px; /* Khoảng cách bên trong ô tiêu đề */
+    border: 2px solid black; /* Đường viền cho ô tiêu đề */
+}
