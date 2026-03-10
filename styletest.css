@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr; /* Cột đầu tiên có chiều rộng cố định, cột thứ hai và thứ ba chiếm phần còn lại của không gian */
+    grid-template-rows: auto; /* Hàng có chiều cao tự động */
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "navbar navbar navbar"
+        "sidebar section section"
+        "sidebar footer footer"; /* Định nghĩa khu vực cho các phần tử */
+}
+
+.header {
+    grid-area: header; /* Đặt phần tử vào khu vực header */
+    text-align: center; /* Căn giữa nội dung trong header */
+    padding: 20px; /* Khoảng cách bên trong header */
+}
+
+.navbar {
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục trong navbar */
+    justify-content: center; /* Căn giữa các mục trong navbar */
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu không đủ chỗ */
+    grid-area: navbar; /* Đặt phần tử vào khu vực navbar */
+    padding: 10px; /* Khoảng cách bên trong navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ khoảng cách bên trong */
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài */
+    display: flex; /* Sử dụng flexbox để sắp xếp các mục trong ul */
+    gap: 20px; /* Khoảng cách giữa các mục trong ul */
+}
+
+
+.navbar li {
+    margin: 0; /* Loại bỏ khoảng cách bên ngoài của các mục */
+}
+
+.navbar li a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color:magenta; /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    transition: color 0.4s; /* Hiệu ứng chuyển màu mượt mà */
+    white-space: nowrap; /* Ngăn chặn việc xuống dòng của các liên kết */
+}
+
+.navbar li a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.section {
+    grid-area: section; /* Đặt phần tử vào khu vực section */
+    text-align: left;
+    margin: 0 auto; /* Căn giữa đoạn văn */
+}
+
+.footer {
+    grid-area: footer; /* Đặt phần tử vào khu vực footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+    padding: 20px; /* Khoảng cách bên trong footer */
+}

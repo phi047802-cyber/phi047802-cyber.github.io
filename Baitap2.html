@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onclick Sự kiện - Lưu thông tin JSON vào Bảng</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scriptBaitap2.js" defer></script>
+</head>
+<body>
+    <h2>Khảo sát đánh giá giảng viên</h2>
+    <label for="addSubject">Tên môn học:</label>
+    <input type="text" id="addSubject" placeholder="Nhập môn học...">
+    <br><br>
+    <label for="addTeacher">Tên giảng viên:</label>
+    <input type="text" id="addTeacher" placeholder="Nhập tên giảng viên...">
+    <br><br>
+    <label for="addStudent">Họ tên sinh viên:</label>
+    <input type="text" id="addStudent" placeholder="Nhập tên bạn...">
+    <br><br>
+    <label>Ngày giờ gửi form:</label>
+    <span id="submitTime"></span><br><br>
+
+    <table border="1" style="border-collapse: collapse;" cellspacing="0" id="SurveyTable">
+      <thead>
+        <th>Tiêu chí</th>
+        <th>1 (Rất kém)</th>
+        <th>2 (Kém)</th>
+        <th>3 (Trung bình)</th>
+        <th>4 (Tốt)</th>
+        <th>5 (Rất tốt)</th>
+      </thead>
+      <tbody id="TableBody">
+
+      </tbody>
+    </table>
+
+    <br> <br>
+    <h2 id="DTB">Trung bình điểm của giảng viên: Chưa hoàn thành đánh giá</h2>
+
+    <button id="SubmitButton" type="button">Gửi khảo sát</button>
+    <div id="JsonContainer">
+      <h1>Dữ liệu khảo sát dưới dạng JSON</h1>
+      <pre id="JsonOutput"></pre>
+    </div>
+    <br><br>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onclick Sự kiện - Lưu thông tin JSON vào Bảng</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scriptBaitap1.js" defer></script>
+</head>
+<body>
+  <nav>
+    
+  </nav>
+  <h2>Bảng thêm, xóa data người dùng</h2>
+  <form id="userData">
+    <label for="addUserName">Nhập tên người dùng:</label>
+    <input type="text" id="addUserName" placeholder="Tên người dùng...">
+    <br><br>
+
+    <label for="addUserAddress">Nhập địa chỉ người dùng:</label>
+    <input type="text" id="addUserAddress" placeholder="Địa chỉ...">
+    <br><br>
+
+    <button type="button" id="AddButton">Thêm người dùng</button>
+  </form>
+  <br><br>
+  <table id='UserTable' border="1" cellspacing="0">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Địa chỉ</th>
+        <th>Dữ liệu JSON</th>
+        <th>Xóa</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+  </table>
+  <hr>
+
+  
+  <h2>Xóa người dùng theo STT</h2>
+  <label for="deleteUser">Nhập STT người dùng muốn xóa:</label>
+  <input id="deleteUser" type='number' placeholder="STT cần xóa...">
+  <button type="button" id="DeleteButton">Xóa</button>
+
+</body>
+</html>
