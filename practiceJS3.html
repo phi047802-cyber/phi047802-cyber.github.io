@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/JS3.js" defer></script>
+</head>
+<body>
+    
+    <table border="1" cellspacing="0" style="border-collapse: collapse; margin-left: 400px;">
+        <tr>
+            <td id="ThoiGian"><pre></pre></td>
+            <td id="NhanVien">Nhân viên: Nguyễn Văn A</td>
+        </tr>
+
+        <tr>
+                <td colspan="2" style="font-size: 20px; text-align: center;"><b>THỰC ĐƠN</b></td>
+        </tr>
+        
+        <tr>
+                <td colspan="2">
+                    <form id="ChonBanChonMon" style="text-align: center; margin: 40px; height: 200px;">
+                        <table border="1" cellspacing="0" style="border-collapse: collapse; height: 150px;">
+                            <tr>
+                                <th><label for="ChonBan">Bàn</label></th>
+                                <th><label for="ChonMon">Món ăn</label></th>
+                            </tr>
+
+                            <tr>
+                                <td style="width: 100%;">
+                                    <select id="ChonBan" style="margin: 30px;">
+                                        <option value="Ban1">Bàn 1</option>
+                                        <option value="Ban2">Bàn 2</option>
+                                        <option value="Ban3">Bàn 3</option>
+                                    </select>
+                                </td>
+
+                                <td style="width: 100%; ">
+                                    <select id="ChonMonAn" style="margin: 30px;">
+                                        <option name="BunBo" value="20000">Bún bò</option>
+                                        <option name="HuTieu" value="18000">Hủ tiếu</option>
+                                        <option name="BanhCanh" value="17000">Bánh canh</option>
+                                        <option name="PhoBo" value="19000">Phở bò</option>
+                                        <option name="Nui" value="15000">Nui</option>
+                                        <option name="BanhMiThit" value="12000">Bánh mì thịt</option>
+                                        <option name="BanhCuon" value="15000">Bánh cuốn</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table border="1" cellspacing="0" style="border-collapse: collapse; display:none">
+                            <tr style="font-size: 18px;">
+                                <th>Bàn 1</th>
+                                <th>Bàn 2</th>
+                                <th>Bàn 3</th>
+                            </tr>
+
+                            <tr>
+                                <td><pre></pre></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+        </tr>
+    </table>
+</body>
+</html>

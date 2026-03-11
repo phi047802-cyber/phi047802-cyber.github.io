@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/JS1.js"></script>
+</head>
+<body>
+    <form id="FormTinhLuong">
+        <table border="1" style="border-collapse: collapse; background-color: orange; text-align: left;" cellspacing="0">
+            <tr>
+                <th><label for="Luong">Lương</label></th>
+                <td><input type="text" placeholder="Nhập lương..." id="Luong"></td>
+            </tr>
+            <tr>
+                <th><label for="HeSoLuong">Hệ số lương</label></th>
+                <td><input type="number" id="HeSoLuong" placeholder="Chỉnh hệ số lương" min="1.0" max="10.0" step="0.1" value="1.0"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button id="ButtonTinhLuong" type="button" style="border-radius: 15px;">Tính lương tháng</button></td>
+            </tr>
+            <tr>
+                <th>Lương tháng</th>
+                <th><pre id="Chot"></pre></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

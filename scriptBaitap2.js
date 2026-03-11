@@ -23,7 +23,7 @@ $(document).ready(function() {
         let STTTieuChi = index + 1;
         let $tr = $('<tr>');
 
-        $tr.append($('<tr>').text(TieuChi))
+        $tr.append($('<td>').text(TieuChi))
 
         for (let i = 1; i <= 5;i++) {
             let radioHTML =`<input type="radio" name="TieuChi${STTTieuChi}" value="${i}">`;
